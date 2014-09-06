@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Mobile App excercise on Phone Gap</title>
+<style type=”text/css”>
+// yourname div
+#yourname{width:308px; 
+          font-size:1.1em;
+          border-radius: 5px; 
+          background:#00FFCC;
+          color:#9ab; 
+          text-align:center;
+          float:left;  
+          display:block;          
+}
+#button{ margin:3px 0px 3px 5px;
+          width:308px;
+          padding:1.2em 0;
+          border-radius: 5px;
+          background:#99FFCC;  // Light blue         
+          color:#FFF;
+          font-size:1.1em;
+          text-align:center;
+          float:left;
+          display:block;       
+}
+</style>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css" />
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+<script type=”text/javascript”>
+  function displayHelloName()
+  {
+      if(document.getElementById("yname").value ==””;)
+      {
+         window.alert(“Please enter your name”);
+         return false;      
+      }
+      else
+         window.alert(“Hello” + yname”);
+ }
+</head>
+
+<body>
+ <div id="yourname">
+      <input type=”text”name=”yname”/>
+ </div>
+   <div id ="button">
+       <a href=”#” value="Submit"onclick="displayHelloName()”;</a>
+   </div>
+</div>             
+ 
+</body> 
+</html>
+
