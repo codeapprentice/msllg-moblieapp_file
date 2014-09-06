@@ -33,7 +33,8 @@
 <script type=”text/javascript”>
   function displayHelloName()
   {
-      if(document.getElementById("yname").value =="";)
+      var namefield = document.getElementById("yname");
+      if(namefield.value =="";)
       {
          navigator.notification.alert("Please enter your name");
          return false;      
