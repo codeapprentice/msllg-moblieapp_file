@@ -34,13 +34,13 @@
   function displayHelloName()
   {
       var namefield = document.getElementById("yname");
-      if(namefield.value =="";)
+      if(namefield.value !="";)
       {
-         navigator.notification.alert("Please enter your name");
+         navigator.notification.alert(""Hello” + yname"");
          return false;      
       }
       else
-         navigator.notification.alert("Hello” + yname");
+         navigator.notification.alert("Please enter your name");
  }
 </head>
 
