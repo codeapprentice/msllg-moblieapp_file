@@ -9,7 +9,7 @@
 <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 <script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
 <script type="text/javascript">
-  function displayHelloName()
+  function displayHelloName(yname)
   {
       var namefield = document.getElementById("yname");
       if(namefield.value !="";)
@@ -30,7 +30,7 @@
   
   <br>
 
-       <input type="button" value="Submit"onclick="displayHelloName()";>
+       <input type="button" value="Submit"onclick="displayHelloName(yname)";>
    
 </form>
    
